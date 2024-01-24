@@ -30,3 +30,32 @@
 .user-component__column>span{
   padding-right: 5px;
 }
+
+@keyframes hideSplashScreen {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    
+    /* 단지 숨기는것 뿐 html에는 남아있다  */
+    /* 숨겨 없애고 싶으면 JS를 사용해야함 */
+    visibility: hidden; 
+
+  }
+}
+
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vW;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+}
