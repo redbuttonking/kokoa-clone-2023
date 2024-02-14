@@ -1,3 +1,7 @@
+#setting-screen{
+  height: 110vh;
+  
+}
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -11,7 +15,38 @@
   opacity: 0.8;
   font-size: 22px;
   margin-right: 20px;
-} 
+  
+}
+
+.settings__setting-column{
+  display: flex;
+}
+
 .settings__setting-column:last-child{
   opacity: 0.6;
+}
+
+.settings__setting:last-child{
+  padding-bottom: 30px;
+  border-bottom: none;
+}
+
+.settings__setting__line{
+  border: none; 
+  border-top: 1px solid #ccc; 
+  padding-top: 15px;
+  
+}
+
+.settings__setting-badge{
+  background-color: tomato;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
 }
