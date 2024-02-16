@@ -26,6 +26,7 @@
           <i class="fa-solid fa-battery-full"></i>
           
           <i class="fa-sharp fa-solid fa-bolt"></i>
+    
         </div>
     
       </div>
@@ -74,7 +75,6 @@
 
           <div class="user-component__column">
             
-            <!-- 요거 중앙 정렬 시켜야한다 -->
             <h6 class="user-component__state-title">상태메시지 +</h6>
     
           </div>
@@ -153,20 +153,105 @@
           <div class="user-component">
             <div class="user-component__column">
               
-              <img src="data:image/png;base64,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" 
+              <img src="https://t1.daumcdn.net/cfile/tistory/2341EC345954A74A03" 
               class="user-component__avtar user-component__avtar--sm"/>
     
               <div class="user-component__text">
                 <h4 class="user-component__title user-component__title--not--bold">김철수</h4>
+                <h6 class="user-component__subtitle">dreamer</h6>
               </div>
     
             </div>
     
-            <div class="user-component__column">
-              <!-- 친구에서는 숫자가 들어가지 않음 -->
+            <div class="user-component__column  user-component__column-profile-music">
+              <div>
+                <span>  
+                  한 페이지가 될 수 있게 DAY6(데...
+                </span>
+                <i class="fa-solid fa-circle-play" style="color: #06cf40;"></i>
+              </div>
+            
             </div>
     
           </div>
+
+          <div class="user-component">
+            <div class="user-component__column">
+              
+              <img src="https://cdn-icons-png.flaticon.com/512/2454/2454302.png" 
+              class="user-component__avtar user-component__avtar--sm"/>
+    
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not--bold">이영희</h4>
+                <h6 class="user-component__subtitle">쿵스 쿵스</h6>
+              </div>
+    
+            </div>
+    
+            <div class="user-component__column  user-component__column-profile-music">
+              <div>
+                <span>  
+                  하나님의 부르심 - 피아워십(F.I.A)
+                </span>
+                <i class="fa-solid fa-circle-play" style="color: #06cf40;"></i>
+              </div>
+            
+            </div>
+    
+          </div>
+
+          <div class="user-component">
+            <div class="user-component__column">
+              
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7A1xfQSC2WuTXsIwM7lPwKPuqaU8igASjw&usqp=CAU" 
+              class="user-component__avtar user-component__avtar--sm"/>
+    
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not--bold">박영철</h4>
+                <h6 class="user-component__subtitle">수학.열.창!</h6>
+              </div>
+    
+            </div>
+    
+            <div class="user-component__column  user-component__column-profile-music">
+              <div>
+                <span>  
+                  잘 부탁드립니다 - 익스
+                </span>
+                <i class="fa-solid fa-circle-play" style="color: #06cf40;"></i>
+              </div>
+            
+            </div>
+    
+          </div>
+
+          <div class="user-component">
+            <div class="user-component__column">
+              
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6g0VJyS267j6_owW304auVzMXRz5YVVF7ug&usqp=CAU" 
+              class="user-component__avtar user-component__avtar--sm"/>
+    
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not--bold">소민철</h4>
+                <h6 class="user-component__subtitle">😊</h6>
+              </div>
+    
+            </div>
+    
+            <div class="user-component__column  user-component__column-profile-music">
+              <div>
+                <span>  
+                  첫사랑 - 백야
+                </span>
+                <i class="fa-solid fa-circle-play" style="color: #06cf40;"></i>
+              </div>
+            
+            </div>
+    
+          </div>
+
+
+
         </div>
 
       </main>
