@@ -22,6 +22,10 @@
   margin-bottom: 30px;
 }
 
+.icon-row:last-child{
+
+}
+
 .more-suggestions__icons {
   display: flex;
 }
