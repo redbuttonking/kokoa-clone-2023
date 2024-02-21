@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 500vh;
+  height: 300vh;
 }
 
 #chat-screen .alt-header,
@@ -59,8 +59,9 @@
 .message-row img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 30%;
   margin-right: 10px;
+
 }
 
 .message__author {
@@ -79,6 +80,32 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
   font-size: 18px;
+}
+.message__bubble-kokoa{
+  width: 320px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  font-size: 17px;
+}
+
+.message__bubble-kokoa__title{
+  margin-top : 3px;
+  margin-bottom : 10px;
+  
+}
+.message__bubble-kokoa__subtitle{
+  margin-bottom: 14px;
+  color:rgb(152, 152, 152);
+}
+
+.message__bubble-kokoa__btu{
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  height: 60px;
+  border-radius: 5px;
 }
 
 .message__time,
@@ -200,4 +227,18 @@ transition: all 0.3s ease-in-out;
 
 .reply:focus-within{
   transform: translateY(80px);
+}
+
+.Channel-home{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  /* box-sizing: border-box; */
 }
